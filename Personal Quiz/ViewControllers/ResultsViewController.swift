@@ -32,7 +32,7 @@ class ResultsViewController: UIViewController {
         textResultString.text = newArray.first?.Type.definition
     }
     
-    func sortedResult() {
+   private func sortedResult() {
         for value in arrayQuestion ?? [] {
             switch value.type{
             case .cat:
