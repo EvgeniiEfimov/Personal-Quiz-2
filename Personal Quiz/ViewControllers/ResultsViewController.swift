@@ -36,21 +36,21 @@ class ResultsViewController: UIViewController {
         for value in arrayQuestion ?? [] {
             switch value.type{
             case .cat:
-               var catType = 0
-                catType += 1
-                newArray.append((.cat, catType))
+               var countCatType = 0
+                countCatType += 1
+                newArray.append((.cat, countCatType))
             case .dog:
-                var dogType = 0
-                dogType += 1
-                newArray.append((.dog, dogType))
+                var countDogType = 0
+                countDogType += 1
+                newArray.append((.dog, countDogType))
             case .rabbit:
-                var rabbitType = 0
-                rabbitType += 1
-                newArray.append((.rabbit, rabbitType))
+                var countRabbitType = 0
+                countRabbitType += 1
+                newArray.append((.rabbit, countRabbitType))
             default:
-                var turtleType = 0
-                turtleType += 1
-                newArray.append((.turtle, turtleType))
+                var countTurtleType = 0
+                countTurtleType += 1
+                newArray.append((.turtle, countTurtleType))
             }
         }
         newArray.sort(by: {$0.TypeCount > $1.TypeCount})
